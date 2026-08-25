@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pyc
+.env
+chroma_db/
+chroma_db_old/
+chroma_db_backup/
+.idea/
+.vscode/
+data/pdfs/*.pdf

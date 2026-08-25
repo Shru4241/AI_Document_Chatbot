@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Company Document AI Assistant</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+
+</head>
+
+
+<body>
+
+<div class="app-container">
+
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                🤖
+            </div>
+
+            <div>
+
+                <h2>Document AI</h2>
+
+                <p>
+                    AI Document Assistant
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="about">
+
+            <h3>About</h3>
+
+            <p>
+                Ask questions about your company documents
+                and get answers using AI-powered document
+                retrieval.
+            </p>
+
+        </div>
+
+
+        <div class="technology">
+
+            <h3>Technology</h3>
+
+            <span>🧠 RAG</span>
+
+            <span>📚 ChromaDB</span>
+
+            <span>🔎 Semantic Search</span>
+
+            <span>⚡ Groq LLM</span>
+
+            <span>🐍 Python</span>
+
+        </div>
+
+
+        <button
+            id="clearChat"
+            class="clear-button"
+        >
+            🗑 Clear Chat
+        </button>
+
+    </aside>
+
+
+
+    <!-- Main Chat Area -->
+
+    <main class="chat-container">
+
+
+        <!-- Header -->
+
+        <header class="chat-header">
+
+            <div>
+
+                <h1>
+                    Company Document AI Assistant
+                </h1>
+
+                <p>
+                    Ask questions from your company documents
+                </p>
+
+            </div>
+
+
+            <div class="status">
+
+                <span class="status-dot"></span>
+
+                Online
+
+            </div>
+
+        </header>
+
+
+
+        <!-- Messages -->
+
+        <div
+            class="chat-messages"
+            id="chatMessages"
+        >
+
+            <!-- Welcome message -->
+
+            <div class="message">
+
+                <div class="avatar">
+                    🤖
+                </div>
+
+
+                <div class="message-content">
+
+                    <div class="message-name">
+                        Document AI
+                    </div>
+
+
+                    <div class="message-text">
+
+                        Hello! 👋
+
+                        <br><br>
+
+                        I can answer questions from your
+                        company documents.
+
+                        <br><br>
+
+                        Ask me something like:
+
+                        <ul>
+
+                            <li>
+                                What is the company's revenue?
+                            </li>
+
+                            <li>
+                                What are the major business segments?
+                            </li>
+
+                            <li>
+                                What are the company's key highlights?
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Typing indicator -->
+
+        <div
+            id="typing"
+            class="typing hidden"
+        >
+
+            AI is thinking
+
+            <span></span>
+
+            <span></span>
+
+            <span></span>
+
+        </div>
+
+
+
+        <!-- Input -->
+
+        <div class="input-container">
+
+            <input
+                type="text"
+                id="questionInput"
+                placeholder="Ask a question about your documents..."
+                autocomplete="off"
+            >
+
+
+            <button
+                id="sendButton"
+                title="Ask"
+            >
+                ➤
+            </button>
+
+        </div>
+
+
+
+        <!-- Footer -->
+
+        <div class="footer">
+
+            Company Document AI Assistant
+
+        </div>
+
+    </main>
+
+</div>
+
+
+
+<!-- JavaScript -->
+
+<script src="/static/script.js"></script>
+
+
+</body>
+
+</html>
+
